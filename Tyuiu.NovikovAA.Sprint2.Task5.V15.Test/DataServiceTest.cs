@@ -26,7 +26,7 @@ namespace Tyuiu.NovikovAA.Sprint2.Task5.V15.Test
             });
             Assert.ThrowsException<ArgumentException>(() =>
             {
-                ds.FindDayName(8);
+                ds.FindDayName(368);
             });
 
 

@@ -14,18 +14,18 @@ namespace Tyuiu.NovikovAA.Sprint2.Task5.V15
             Console.WriteLine("Исходные данные");
             Console.WriteLine("********************************************************************");
 
-            Console.WriteLine("Введите номер дня");
-            int numMouth = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите номер дня:");
+            int k = Convert.ToInt32(Console.ReadLine());
 
             string res;
 
-            if ((numMouth < 1) ||  (numMouth > 7)) 
+            if ((k <= 1) || (k >= 365)) 
             {
                 res = "Введено неверное значение!";
             }
             else 
             {
-                res = "Это день: " + ds.FindDayName(numMouth);
+                res = "Это день: " + ds.FindDayName(k);
             }
 
             Console.WriteLine("********************************************************************");

@@ -17,23 +17,23 @@ namespace Tyuiu.NovikovAA.Sprint2.Task6.V14
 
 
             Console.WriteLine("Введите число k (1 <= k <= 365):");
-            int k;
-            if (!int.TryParse(Console.ReadLine(), out k) || k < 1 || k > 365)
+            int k = Convert.ToInt32(Console.ReadLine());
+            if ( k < 1 || k > 365)
             {
                 Console.WriteLine("Некорректный ввод k!");
                 return;
             }
 
             Console.WriteLine("Введите день недели для 1 января (1-понедельник, 7-воскресенье):");
-            int d;
-            if (!int.TryParse(Console.ReadLine(), out d) || d < 1 || d > 7)
+            int d = Convert.ToInt32(Console.ReadLine());
+            if (d < 1 || d > 7)
             {
                 Console.WriteLine("Некорректный ввод d!");
                 return;
             }
 
             int dayIndex = (d + k - 1) % 7;
-            string dayName = dayIndex switch
+            string res = dayIndex switch
             {
                 0 => "воскресенье",
                 1 => "понедельник",
@@ -45,7 +45,7 @@ namespace Tyuiu.NovikovAA.Sprint2.Task6.V14
                 _ => "Неизвестный день" // Обработка неожиданного значения
             };
 
-            Console.WriteLine($"День недели для {k}-го дня года: {dayName}");
+            Console.WriteLine($"День недели для {k}-го дня года: {res}");
 
 
 
@@ -53,7 +53,7 @@ namespace Tyuiu.NovikovAA.Sprint2.Task6.V14
             Console.WriteLine("РЕЗУЛЬТАТ");
             Console.WriteLine("********************************************************************");
 
-            Console.WriteLine(dayName);
+            Console.WriteLine(res);
 
             Console.WriteLine();
         }

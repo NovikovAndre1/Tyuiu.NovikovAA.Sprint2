@@ -13,8 +13,8 @@ namespace Tyuiu.NovikovAA.Sprint2.Task6.V14.Lib
                 return "Invalid input"; // Обработка некорректного ввода
             }
 
-            int dayIndex = (d + k - 1) % 7;
-            return dayIndex switch
+            int res = (d + k - 1) % 7;
+            return res switch
             {
                 0 => "Воскресенье",
                 1 => "Понедельник",

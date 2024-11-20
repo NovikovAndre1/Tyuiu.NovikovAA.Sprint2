@@ -8,7 +8,7 @@ namespace Tyuiu.NovikovAA.Sprint2.Task0.V30
     {
         static void Main(string[] args)
         {
-            DataService ds = new DataService(); // Не используется в этом коде, можно убрать
+            DataService ds = new DataService(); 
 
             int x = 95;
             int y = 1735;

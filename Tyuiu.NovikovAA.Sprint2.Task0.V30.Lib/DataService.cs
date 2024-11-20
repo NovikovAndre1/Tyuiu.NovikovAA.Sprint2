@@ -11,8 +11,6 @@ namespace Tyuiu.NovikovAA.Sprint2.Task0.V30.Lib
         {
             bool[] res = new bool[6];
 
-            
-
             res[0] = x + 1 != y;
             res[1] = x == y;
             res[2] = x < y;

@@ -25,12 +25,12 @@ namespace Tyuiu.NovikovAA.Sprint2.Task0.V30
             Console.WriteLine("РЕЗУЛЬТАТ");
             Console.WriteLine("********************************************************************");
 
-            res[0] = x + 1640 == y; // Равно ли x y
-            res[1] = x + 1640 != y; // Не равно ли x y
-            res[2] = x + 1 < y; // Меньше ли x y
-            res[3] = x + 1 > y; // Больше ли x y
-            res[4] = x + 1 <= y; // Меньше или равно ли x y
-            res[5] = x + 1 >= y; // Больше или равно ли x y
+            res[0] = x + 1 != y;
+            res[1] = x == y;
+            res[2] = x < y;
+            res[3] = x + 2 <= y;
+            res[4] = x <= y;
+            res[5] = x + 3 < y;
 
             for (int i = 0; i < 6; i++)
             {
